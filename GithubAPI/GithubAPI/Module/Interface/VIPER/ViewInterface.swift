@@ -12,4 +12,13 @@ protocol ViewInterface: AnyObject {
     func addViews()
     func constraintViews()
     func subscribeClicks()
+
+    func showLoading()
+    func hideLoading()
+}
+
+extension ViewInterface {
+    func showLoading() {}
+
+    func hideLoading() {}
 }

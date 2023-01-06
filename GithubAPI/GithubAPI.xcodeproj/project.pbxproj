@@ -125,8 +125,8 @@
 		061AF5B02966426C004DA90D /* GithubAPI */ = {
 			isa = PBXGroup;
 			children = (
-				061AF5E929672BB1004DA90D /* Module */,
 				061AF5E5296644BB004DA90D /* AppBootstrap */,
+				061AF5E929672BB1004DA90D /* Module */,
 				061AF5B52966426C004DA90D /* ViewController.swift */,
 				061AF5BA2966426E004DA90D /* Assets.xcassets */,
 				061AF5BC2966426E004DA90D /* LaunchScreen.storyboard */,
