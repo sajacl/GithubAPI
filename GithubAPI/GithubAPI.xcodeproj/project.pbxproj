@@ -17,6 +17,18 @@
 		061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5E12966442F004DA90D /* AppDelegateFactory.swift */; };
 		061AF5E42966446C004DA90D /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5E32966446C004DA90D /* CompositeAppDelegate.swift */; };
 		061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5E729664698004DA90D /* ViewConfigurationAppDelegate.swift */; };
+		061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5EB2967BADE004DA90D /* ListViewController.swift */; };
+		061AF5EE2967BAEA004DA90D /* ListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5ED2967BAEA004DA90D /* ListInterface.swift */; };
+		061AF5F02967BAF1004DA90D /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5EF2967BAF1004DA90D /* ListPresenter.swift */; };
+		061AF5F22967BAFA004DA90D /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F12967BAFA004DA90D /* ListInteractor.swift */; };
+		061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F32967BB00004DA90D /* ListRouter.swift */; };
+		061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F62967BD0A004DA90D /* ViewInterface.swift */; };
+		061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F82967BD19004DA90D /* PresenterInterface.swift */; };
+		061AF5FB2967BD2A004DA90D /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FA2967BD2A004DA90D /* RouterInterface.swift */; };
+		061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FC2967BD88004DA90D /* ThreadManagement.swift */; };
+		061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FE2967C10A004DA90D /* InteractorInterface.swift */; };
+		061AF6012967C244004DA90D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6002967C244004DA90D /* BaseViewController.swift */; };
+		061AF6042967C353004DA90D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6032967C353004DA90D /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,18 @@
 		061AF5E12966442F004DA90D /* AppDelegateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateFactory.swift; sourceTree = "<group>"; };
 		061AF5E32966446C004DA90D /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
 		061AF5E729664698004DA90D /* ViewConfigurationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurationAppDelegate.swift; sourceTree = "<group>"; };
+		061AF5EB2967BADE004DA90D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		061AF5ED2967BAEA004DA90D /* ListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInterface.swift; sourceTree = "<group>"; };
+		061AF5EF2967BAF1004DA90D /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		061AF5F12967BAFA004DA90D /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		061AF5F32967BB00004DA90D /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		061AF5F62967BD0A004DA90D /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		061AF5F82967BD19004DA90D /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		061AF5FA2967BD2A004DA90D /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
+		061AF5FC2967BD88004DA90D /* ThreadManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadManagement.swift; sourceTree = "<group>"; };
+		061AF5FE2967C10A004DA90D /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		061AF6002967C244004DA90D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		061AF6032967C353004DA90D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,7 @@
 		061AF5B02966426C004DA90D /* GithubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				061AF5E929672BB1004DA90D /* Module */,
 				061AF5E5296644BB004DA90D /* AppBootstrap */,
 				061AF5B52966426C004DA90D /* ViewController.swift */,
 				061AF5BA2966426E004DA90D /* Assets.xcassets */,
@@ -144,6 +169,49 @@
 				061AF5E729664698004DA90D /* ViewConfigurationAppDelegate.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		061AF5E929672BB1004DA90D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5F52967BCF6004DA90D /* Interface */,
+				061AF5EA29672BBF004DA90D /* List */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		061AF5EA29672BBF004DA90D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5ED2967BAEA004DA90D /* ListInterface.swift */,
+				061AF5EB2967BADE004DA90D /* ListViewController.swift */,
+				061AF5EF2967BAF1004DA90D /* ListPresenter.swift */,
+				061AF5F12967BAFA004DA90D /* ListInteractor.swift */,
+				061AF5F32967BB00004DA90D /* ListRouter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		061AF5F52967BCF6004DA90D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				061AF6022967C31B004DA90D /* VIPER */,
+				061AF5FC2967BD88004DA90D /* ThreadManagement.swift */,
+				061AF6002967C244004DA90D /* BaseViewController.swift */,
+				061AF6032967C353004DA90D /* BaseView.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		061AF6022967C31B004DA90D /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5FA2967BD2A004DA90D /* RouterInterface.swift */,
+				061AF5F62967BD0A004DA90D /* ViewInterface.swift */,
+				061AF5F82967BD19004DA90D /* PresenterInterface.swift */,
+				061AF5FE2967C10A004DA90D /* InteractorInterface.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +344,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061AF5EE2967BAEA004DA90D /* ListInterface.swift in Sources */,
+				061AF5FB2967BD2A004DA90D /* RouterInterface.swift in Sources */,
 				061AF5E42966446C004DA90D /* CompositeAppDelegate.swift in Sources */,
+				061AF6042967C353004DA90D /* BaseView.swift in Sources */,
+				061AF5F02967BAF1004DA90D /* ListPresenter.swift in Sources */,
+				061AF5F22967BAFA004DA90D /* ListInteractor.swift in Sources */,
 				061AF5B62966426C004DA90D /* ViewController.swift in Sources */,
+				061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */,
+				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
+				061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */,
+				061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */,
 				061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */,
+				061AF6012967C244004DA90D /* BaseViewController.swift in Sources */,
+				061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */,
+				061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
