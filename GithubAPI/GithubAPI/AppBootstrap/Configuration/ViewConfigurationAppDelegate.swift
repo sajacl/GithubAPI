@@ -14,13 +14,19 @@ class ViewConfigurationAppDelegate: AppDelegateType {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        window?.rootViewController = Self.createRootViewController()
+        window?.rootViewController = createRootViewController(for: UIDevice.current.userInterfaceIdiom)
         window?.makeKeyAndVisible()
 
         return true
     }
 
-    private static func createRootViewController() -> UIViewController {
-        ViewController()
+    private func createRootViewController(
+        for userInterface: UIUserInterfaceIdiom
+    ) -> UIViewController {
+        if userInterface == .pad {
+            return ViewController()
+        }
+
+        return ViewController()
     }
 }
