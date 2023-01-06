@@ -20,7 +20,7 @@ class AppDelegate: AppDelegateType {
         }
 
         preconditionFailure(
-            "One or many application configuration(s) was failed to finishing launch sequence."
+            "One or many application configuration(s) was failed to finishing launch sequence successfully."
         )
     }
 }
