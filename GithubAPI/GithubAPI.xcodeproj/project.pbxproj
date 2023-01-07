@@ -36,6 +36,7 @@
 		061AF61D2968EF60004DA90D /* RepositoryDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF61C2968EF60004DA90D /* RepositoryDecodableModel.swift */; };
 		061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */; };
 		061AF62529690477004DA90D /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 061AF62429690477004DA90D /* Common */; };
+		061AF62729690B53004DA90D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF62629690B53004DA90D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		061AF61C2968EF60004DA90D /* RepositoryDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDecodableModel.swift; sourceTree = "<group>"; };
 		061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenDecodableModel.swift; sourceTree = "<group>"; };
 		061AF62329690412004DA90D /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Common; path = ../Common; sourceTree = "<group>"; };
+		061AF62629690B53004DA90D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				061AF6152967D611004DA90D /* AppOperationCategory.swift */,
 				061AF6172968ED9A004DA90D /* Operations */,
 				061AF6182968EDA9004DA90D /* CodableProxy.swift */,
+				061AF62629690B53004DA90D /* WebViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
+				061AF62729690B53004DA90D /* WebViewController.swift in Sources */,
 				061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */,
 				061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */,
 				061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */,
