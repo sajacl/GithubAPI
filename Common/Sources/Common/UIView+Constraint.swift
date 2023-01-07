@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIView {
+public extension UIView {
     @discardableResult
     func heightAnchor(constant: CGFloat) -> Self {
         heightAnchor.constraint(equalToConstant: constant).isActive = true
