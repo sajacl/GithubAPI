@@ -29,6 +29,13 @@
 		061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FE2967C10A004DA90D /* InteractorInterface.swift */; };
 		061AF6012967C244004DA90D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6002967C244004DA90D /* BaseViewController.swift */; };
 		061AF6042967C353004DA90D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6032967C353004DA90D /* BaseView.swift */; };
+		061AF6102967CEFC004DA90D /* Operations in Frameworks */ = {isa = PBXBuildFile; productRef = 061AF60F2967CEFC004DA90D /* Operations */; };
+		061AF6142967D5DB004DA90D /* FetchRepositoriesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6132967D5DB004DA90D /* FetchRepositoriesOperation.swift */; };
+		061AF6162967D611004DA90D /* AppOperationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6152967D611004DA90D /* AppOperationCategory.swift */; };
+		061AF6192968EDA9004DA90D /* CodableProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6182968EDA9004DA90D /* CodableProxy.swift */; };
+		061AF61D2968EF60004DA90D /* RepositoryDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF61C2968EF60004DA90D /* RepositoryDecodableModel.swift */; };
+		061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */; };
+		061AF62529690477004DA90D /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 061AF62429690477004DA90D /* Common */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,13 @@
 		061AF5FE2967C10A004DA90D /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		061AF6002967C244004DA90D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		061AF6032967C353004DA90D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		061AF60D2967CE0E004DA90D /* Operations */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Operations; path = ../Operations; sourceTree = "<group>"; };
+		061AF6132967D5DB004DA90D /* FetchRepositoriesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoriesOperation.swift; sourceTree = "<group>"; };
+		061AF6152967D611004DA90D /* AppOperationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOperationCategory.swift; sourceTree = "<group>"; };
+		061AF6182968EDA9004DA90D /* CodableProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableProxy.swift; sourceTree = "<group>"; };
+		061AF61C2968EF60004DA90D /* RepositoryDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDecodableModel.swift; sourceTree = "<group>"; };
+		061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenDecodableModel.swift; sourceTree = "<group>"; };
+		061AF62329690412004DA90D /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Common; path = ../Common; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061AF6102967CEFC004DA90D /* Operations in Frameworks */,
+				061AF62529690477004DA90D /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +121,13 @@
 		061AF5A52966426C004DA90D = {
 			isa = PBXGroup;
 			children = (
+				061AF62329690412004DA90D /* Common */,
+				061AF60D2967CE0E004DA90D /* Operations */,
 				061AF5B02966426C004DA90D /* GithubAPI */,
 				061AF5C72966426E004DA90D /* GithubAPITests */,
 				061AF5D12966426E004DA90D /* GithubAPIUITests */,
 				061AF5AF2966426C004DA90D /* Products */,
+				061AF60E2967CEFC004DA90D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +144,10 @@
 		061AF5B02966426C004DA90D /* GithubAPI */ = {
 			isa = PBXGroup;
 			children = (
+				061AF61A2968EF4B004DA90D /* Model */,
 				061AF5E5296644BB004DA90D /* AppBootstrap */,
 				061AF5E929672BB1004DA90D /* Module */,
+				061AF6112967D5B1004DA90D /* Utils */,
 				061AF5B52966426C004DA90D /* ViewController.swift */,
 				061AF5BA2966426E004DA90D /* Assets.xcassets */,
 				061AF5BC2966426E004DA90D /* LaunchScreen.storyboard */,
@@ -214,6 +235,64 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		061AF60E2967CEFC004DA90D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		061AF6112967D5B1004DA90D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				061AF6152967D611004DA90D /* AppOperationCategory.swift */,
+				061AF6172968ED9A004DA90D /* Operations */,
+				061AF6182968EDA9004DA90D /* CodableProxy.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		061AF6122967D5BA004DA90D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				061AF6132967D5DB004DA90D /* FetchRepositoriesOperation.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		061AF6172968ED9A004DA90D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				061AF6122967D5BA004DA90D /* List */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		061AF61A2968EF4B004DA90D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				061AF6202968F169004DA90D /* Encodable */,
+				061AF61B2968EF51004DA90D /* Decodable */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		061AF61B2968EF51004DA90D /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				061AF61C2968EF60004DA90D /* RepositoryDecodableModel.swift */,
+				061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
+		061AF6202968F169004DA90D /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +309,10 @@
 			dependencies = (
 			);
 			name = GithubAPI;
+			packageProductDependencies = (
+				061AF60F2967CEFC004DA90D /* Operations */,
+				061AF62429690477004DA90D /* Common */,
+			);
 			productName = GithubAPI;
 			productReference = 061AF5AE2966426C004DA90D /* GithubAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -346,12 +429,15 @@
 			files = (
 				061AF5EE2967BAEA004DA90D /* ListInterface.swift in Sources */,
 				061AF5FB2967BD2A004DA90D /* RouterInterface.swift in Sources */,
+				061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */,
 				061AF5E42966446C004DA90D /* CompositeAppDelegate.swift in Sources */,
 				061AF6042967C353004DA90D /* BaseView.swift in Sources */,
+				061AF6142967D5DB004DA90D /* FetchRepositoriesOperation.swift in Sources */,
 				061AF5F02967BAF1004DA90D /* ListPresenter.swift in Sources */,
 				061AF5F22967BAFA004DA90D /* ListInteractor.swift in Sources */,
 				061AF5B62966426C004DA90D /* ViewController.swift in Sources */,
 				061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */,
+				061AF6192968EDA9004DA90D /* CodableProxy.swift in Sources */,
 				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
@@ -359,6 +445,8 @@
 				061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */,
 				061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */,
 				061AF6012967C244004DA90D /* BaseViewController.swift in Sources */,
+				061AF6162967D611004DA90D /* AppOperationCategory.swift in Sources */,
+				061AF61D2968EF60004DA90D /* RepositoryDecodableModel.swift in Sources */,
 				061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */,
 				061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */,
 			);
@@ -694,6 +782,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		061AF60F2967CEFC004DA90D /* Operations */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Operations;
+		};
+		061AF62429690477004DA90D /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 061AF5A62966426C004DA90D /* Project object */;
 }
