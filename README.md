@@ -20,15 +20,17 @@ There some steps to be able to run the application properly:
   1. Client id
   2. Client secret 
   3. Call back url
-3. Put them inside your scheme environment variables.
-4. This application will always show my repositories, you can simply change it with your own, its hard coded inside the list module, list viewcontroller.
+3. Put them inside your scheme environment variables, since this is an MVP, app will crash if you don't put them!
+4. This application will always show my repositories, you can simply change it with your own, its hard coded inside the list module, list viewcontroller,
+Since mine did not had any stars I put mine :'(
 
 ### Project pseudo: 
 
-Project has 5 Main parts
-Bootstrap
-Model
-Module
+Project has 5 Main parts:
+
+Bootstrap (Contains AppDelegate + boot sequence configurations).
+Model (IPC models, and Encodable/Decodable models).
+Module (Login, List, Detail)
 Utils
 Resources
 
@@ -45,12 +47,13 @@ Resources
 
 1. There is no sharing secrets, since every developer has to create and config their own application and update XCode environment.
 2. App credentials are stored in Keychain, combining it with 1 leads to no data leak.
-3. Network communications have their own operations (NSOperation).
-4. App supports multi language
+3. Every network communication has its own operation (NSOperation).
+4. App supports multi language.
 5. App supports light theme/dark theme.
 6. You can stream app logs and download them after directly from the device.
-7. I took it seriously, so code is really easy to read and to write tests.
-8. BEST UI DESIGN in the world \:D/
+7. I took it seriously, so code is really easy to read and to write tests for.
+8. iPad and iPhone is supported.
+9. BEST UI DESIGN in the world \\:D/
 
 ## License
 
