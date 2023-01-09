@@ -12,7 +12,7 @@ import Common
 final class RepositoryTableViewCell: UITableViewCell {
     private lazy var repositoryNameLabel: UILabel = {
         let parent = UILabel()
-        parent.textColor = .darkGray
+        parent.textColor = UIColor.text
         parent.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         parent.prepareForAutoLayout()
         return parent
@@ -20,7 +20,7 @@ final class RepositoryTableViewCell: UITableViewCell {
 
     private lazy var repositoryStarCountLabel: UILabel = {
         let parent = UILabel()
-        parent.textColor = .darkGray
+        parent.textColor = UIColor.text
         parent.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         parent.prepareForAutoLayout()
         return parent
@@ -30,7 +30,7 @@ final class RepositoryTableViewCell: UITableViewCell {
         let parent = UIImageView()
         parent.contentMode = .scaleAspectFit
         parent.image = UIImage(systemName: "star.fill")
-        parent.tintColor = .yellow
+        parent.tintColor = UIColor.yellow
         parent.prepareForAutoLayout()
         return parent
     }()
@@ -49,7 +49,7 @@ final class RepositoryTableViewCell: UITableViewCell {
 
     private func configCell() {
         selectionStyle = .none
-        contentView.backgroundColor = .white
+        contentView.backgroundColor = UIColor.background
     }
 
     private func addViews() {
@@ -87,15 +87,15 @@ final class RepositoryTableViewCell: UITableViewCell {
         let starCount = model.stargazersCount
 
         if starCount > 10 {
-            startImageView.tintColor = .red
+            startImageView.tintColor = UIColor.red
         } else {
-            startImageView.tintColor = .yellow
+            startImageView.tintColor = UIColor.yellow
         }
 
         repositoryStarCountLabel.text = String(starCount)
     }
 
     override func prepareForReuse() {
-        startImageView.tintColor = .yellow
+        startImageView.tintColor = UIColor.yellow
     }
 }

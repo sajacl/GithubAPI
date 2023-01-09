@@ -14,7 +14,7 @@ final class LoadingView: BaseView {
         let parent = UILabel()
         parent.text = titleLabelText
         parent.accessibilityLabel = titleAccessibilityLabel
-        parent.textColor = .darkGray
+        parent.textColor = UIColor.text
         parent.textAlignment = .center
         parent.prepareForAutoLayout()
         return parent
@@ -22,7 +22,7 @@ final class LoadingView: BaseView {
 
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let parent = UIActivityIndicatorView(style: .large)
-        parent.tintColor = .black
+        parent.tintColor = UIColor.black
         parent.hidesWhenStopped = false
         parent.prepareForAutoLayout()
         return parent

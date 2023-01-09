@@ -77,7 +77,9 @@ class ViewConfigurationAppDelegate: AppDelegateType {
 
     private func createPadSplitViewController() -> CustomSplitViewController {
         let listViewController = createListViewController()
-        let detailViewController = IPadDefaultViewController()
+        let detailViewController = CustomNavigationController(
+            rootViewController: IPadDefaultViewController()
+        )
 
         let splitViewController = CustomSplitViewController()
         splitViewController.preferredDisplayMode = .oneBesideSecondary

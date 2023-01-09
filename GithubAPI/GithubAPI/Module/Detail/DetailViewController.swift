@@ -12,7 +12,17 @@ import Common
 final class DetailViewController: BaseViewController {
     private let repository: RepositoryEntity
 
-//    private lazy var 
+    private lazy var starCountView: UIView = {
+        let parent = UIView()
+        
+        return parent
+    }()
+
+    private lazy var forkCountView: UIView = {
+        let parent = UIView()
+
+        return parent
+    }()
 
     init(repository: RepositoryEntity) {
         self.repository = repository
@@ -21,10 +31,16 @@ final class DetailViewController: BaseViewController {
     }
 
     override func configViewController() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.background
 
         title = repository.name
+    }
 
+    override func addViews() {
+
+    }
+
+    override func constraintViews() {
 
     }
 

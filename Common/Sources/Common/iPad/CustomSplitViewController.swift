@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 
 final public class CustomSplitViewController: UISplitViewController {
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
+        .darkContent
+    }
+
     public var pendingRoute: UIViewController?
 
     public override func viewDidAppear(_ animated: Bool) {

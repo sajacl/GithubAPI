@@ -65,11 +65,7 @@ final class WebViewController: BaseViewController {
         webView.load(request)
     }
 
-    private lazy var closeButton: UIButton = {
-        let button = UIButton(type: .close)
-        button.backgroundColor = .white
-        return button
-    }()
+    private lazy var closeButton: UIButton = UIButton(type: .close)
 
     public func addCloseButton() {
         webView.addSubview(closeButton)

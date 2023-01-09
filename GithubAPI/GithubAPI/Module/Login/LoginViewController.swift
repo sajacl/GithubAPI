@@ -32,7 +32,7 @@ final class LoginViewController: BaseViewController {
     }
     
     override func configViewController() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.background
 
         title = NSLocalizedString(
             "LOGIN_TITLE",

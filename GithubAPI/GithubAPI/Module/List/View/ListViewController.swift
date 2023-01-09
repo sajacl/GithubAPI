@@ -19,12 +19,8 @@ final class ListViewController: BaseViewController, ListViewInterface {
 
     private var repositories: [RepositoryEntity] = []
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
-    }
-
     override func configViewController() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.background
 
         title = NSLocalizedString(
             "LIST_TITLE",

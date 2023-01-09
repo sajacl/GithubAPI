@@ -16,7 +16,7 @@ final class ListView: BaseView {
         let parent = UIRefreshControl(frame: .zero)
         parent.attributedTitle = NSAttributedString(
             string: refreshControlLabel,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.text]
         )
         parent.accessibilityLabel = refreshControlLabel
         return parent
@@ -24,7 +24,7 @@ final class ListView: BaseView {
 
     private lazy var repositoriesTableView: UITableView = {
         let parent = UITableView()
-        parent.backgroundColor = .white
+        parent.backgroundColor = UIColor.background
         parent.refreshControl = refreshControl
         parent.dataSource = tableViewHandler
         parent.delegate = tableViewHandler
@@ -69,7 +69,7 @@ final class ListView: BaseView {
     }
 
     override func configViewController() {
-        self.backgroundColor = .white
+        self.backgroundColor = UIColor.background
     }
 
     override func addViews() {

@@ -10,21 +10,21 @@ import UIKit
 
 final public class CustomNavigationBar: UINavigationBar {
     private static let titleTextAttributes: [NSAttributedString.Key: Any] = [
-        .foregroundColor: UIColor.white,
+        .foregroundColor: UIColor.title,
     ]
 
     private static let backButtonTitlePositionOffset = UIOffset(horizontal: 4, vertical: 0)
     private static let backButtonTitleTextAttributes: [NSAttributedString.Key: Any] = [
-        .foregroundColor: UIColor.white,
+        .foregroundColor: UIColor.title,
     ]
 
     private let customBackIndicatorImage = UIImage(systemName: "arrowshape.backward.fill")?
         .withTintColor(
-            UIColor.white,
+            UIColor.title,
             renderingMode: .alwaysOriginal
         )
 
-    private let customBackIndicatorTransitionMask = UIImage(named: "IconBackTransitionMask")
+    private let customBackIndicatorTransitionMask = UIImage(named: "arrowshape.backward.fill")
 
     // Returns the distance from the title label to the bottom of navigation bar
     public var titleLabelBottomInset: CGFloat {
@@ -61,8 +61,8 @@ final public class CustomNavigationBar: UINavigationBar {
     }
 
     private func setupNavigationBarAppearance() {
-        tintColor = UIColor.white
-        backgroundColor = UIColor.white
+        tintColor = UIColor.background
+        backgroundColor = UIColor.background
         isTranslucent = false
 
         standardAppearance = makeNavigationBarAppearance()
