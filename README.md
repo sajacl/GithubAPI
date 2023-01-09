@@ -9,9 +9,29 @@ Thanks for the exciting challenge!
 
 ### This challenge will contain specific parts:
 
-1. Authentication
+1. Authentication via Github
 2. List off repositories
 3. Details of individual repository
+
+Project has 5 Main parts
+Bootstrap
+Model
+Module
+Utils
+Resources
+
+## Tech Stack
+
+| Module | Structure |
+| ------ | ------ |
+| AppDelegate | AppDelegateCompsotie + AppDelegateFactory |
+| Login | UIKit + Viper |
+| List | UIKit + MVVM and Combine |
+| Detail | UIKit |
+
+## Features
+
+Todo
 
 # License
 
