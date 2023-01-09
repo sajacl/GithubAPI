@@ -8,52 +8,50 @@
 import Foundation
 import UIKit
 
-protocol RouterInterface: AnyObject {}
+public protocol RouterInterface: AnyObject {}
 
-class BaseRouter<T> where T: UIViewController {
+open class BaseRouter<T>: RouterInterface where T: UIViewController {
     private unowned var _viewController: T
 
     private var _temporaryStoredViewController: T?
 
-    init(viewController: T) {
+    public init(viewController: T) {
         _temporaryStoredViewController = viewController
         _viewController = viewController
     }
 }
 
-extension BaseRouter: RouterInterface {}
-
 extension BaseRouter {
-    var viewController: T {
+    public var viewController: T {
         defer { _temporaryStoredViewController = nil }
         return _viewController
     }
 
-    var navigationController: UINavigationController? {
+    public var navigationController: UINavigationController? {
         return viewController.navigationController
     }
 
-    func present(_ viewController: UIViewController, animated: Bool = true) {
+    public func present(_ viewController: UIViewController, animated: Bool = true) {
         self.viewController.present(viewController, animated: animated)
     }
 
-    func push(_ viewController: UIViewController, animated: Bool = true, disableTabbarSwipe: Bool = false) {
+    public func push(_ viewController: UIViewController, animated: Bool = true, disableTabbarSwipe: Bool = false) {
         self.navigationController?.pushViewController(viewController, animated: animated)
     }
 }
 
 extension UIViewController {
-    func presentWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true, completion: (()->())? = nil) {
+    public func presentWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true, completion: (()->())? = nil) {
         present(wireframe.viewController, animated: animated, completion: completion)
     }
 }
 
 extension UINavigationController {
-    func pushWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true) {
+    public func pushWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true) {
         self.pushViewController(wireframe.viewController, animated: animated)
     }
 
-    func setRootWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true) {
+    public func setRootWireframe(_ wireframe: BaseRouter<UIViewController>, animated: Bool = true) {
         self.setViewControllers([wireframe.viewController], animated: animated)
     }
 }

@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol InteractorInterface: AnyObject {
+public protocol InteractorInterface: AnyObject {
     var queue: OperationQueue { get }
 
     func cancelAll()
 }
 
-extension InteractorInterface {
+public extension InteractorInterface {
     func cancelAll() {
         queue.cancelAllOperations()
     }

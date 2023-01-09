@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-class BaseViewController: UIViewController, ViewInterface {
-    init() {
+open class BaseViewController: UIViewController, ViewInterface {
+    public init() {
         super.init(nibName: nil, bundle: nil)
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("MVP does not support storyboard initializations.")
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         configViewController()
@@ -26,8 +26,8 @@ class BaseViewController: UIViewController, ViewInterface {
         subscribeClicks()
     }
 
-    func configViewController() {}
-    func addViews() {}
-    func constraintViews() {}
-    func subscribeClicks() {}
+    open func configViewController() {}
+    open func addViews() {}
+    open func constraintViews() {}
+    open func subscribeClicks() {}
 }

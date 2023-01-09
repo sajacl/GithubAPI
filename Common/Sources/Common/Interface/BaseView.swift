@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class BaseView: UIView, ViewInterface {
-    override init(frame: CGRect) {
+open class BaseView: UIView, ViewInterface {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
 
         configViewController()
@@ -18,12 +18,12 @@ class BaseView: UIView, ViewInterface {
         subscribeClicks()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("MVP does not support storyboard initializations.")
     }
 
-    func configViewController() {}
-    func addViews() {}
-    func constraintViews() {}
-    func subscribeClicks() {}
+    open func configViewController() {}
+    open func addViews() {}
+    open func constraintViews() {}
+    open func subscribeClicks() {}
 }

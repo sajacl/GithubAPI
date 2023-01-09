@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewInterface: AnyObject {
+public protocol ViewInterface: AnyObject {
     func configViewController()
     func addViews()
     func constraintViews()
@@ -17,7 +17,7 @@ protocol ViewInterface: AnyObject {
     func hideLoading()
 }
 
-extension ViewInterface {
+public extension ViewInterface {
     func showLoading() {}
 
     func hideLoading() {}

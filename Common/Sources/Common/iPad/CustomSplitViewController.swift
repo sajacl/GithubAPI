@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-final class CustomSplitViewController: UISplitViewController {
-    var pendingRoute: UIViewController?
+final public class CustomSplitViewController: UISplitViewController {
+    public var pendingRoute: UIViewController?
 
-    override func viewDidAppear(_ animated: Bool) {
+    public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         if let pendingRoute = pendingRoute {

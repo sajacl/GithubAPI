@@ -10,7 +10,7 @@ import Foundation
 private let userInteractiveQueueLabel = "ThreadManagement<userInteractive>"
 private let backgroundQueueLabel = "ThreadManagement<background>"
 
-protocol ThreadManagement {
+public protocol ThreadManagement {
     func doOnMainThread(_ job: @escaping () -> Void)
     func doOnMainThreadAfter(delay: DispatchTime, _ job: @escaping () -> Void)
     func doOnBackgroundThread(_ job: @escaping () -> Void)
@@ -23,7 +23,7 @@ protocol ThreadManagement {
     func returnOnBackgroundThread<T>(value: T) -> T
 }
 
-extension ThreadManagement {
+public extension ThreadManagement {
     func doOnMainThread(_ job: @escaping () -> Void) {
         DispatchQueue.main.async { job() }
     }

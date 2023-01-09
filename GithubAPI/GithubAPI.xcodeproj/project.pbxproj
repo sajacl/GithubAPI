@@ -21,13 +21,6 @@
 		061AF5F02967BAF1004DA90D /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5EF2967BAF1004DA90D /* ListPresenter.swift */; };
 		061AF5F22967BAFA004DA90D /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F12967BAFA004DA90D /* ListInteractor.swift */; };
 		061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F32967BB00004DA90D /* ListRouter.swift */; };
-		061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F62967BD0A004DA90D /* ViewInterface.swift */; };
-		061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5F82967BD19004DA90D /* PresenterInterface.swift */; };
-		061AF5FB2967BD2A004DA90D /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FA2967BD2A004DA90D /* RouterInterface.swift */; };
-		061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FC2967BD88004DA90D /* ThreadManagement.swift */; };
-		061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5FE2967C10A004DA90D /* InteractorInterface.swift */; };
-		061AF6012967C244004DA90D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6002967C244004DA90D /* BaseViewController.swift */; };
-		061AF6042967C353004DA90D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6032967C353004DA90D /* BaseView.swift */; };
 		061AF6102967CEFC004DA90D /* Operations in Frameworks */ = {isa = PBXBuildFile; productRef = 061AF60F2967CEFC004DA90D /* Operations */; };
 		061AF6142967D5DB004DA90D /* FetchRepositoriesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6132967D5DB004DA90D /* FetchRepositoriesOperation.swift */; };
 		061AF6162967D611004DA90D /* AppOperationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6152967D611004DA90D /* AppOperationCategory.swift */; };
@@ -51,8 +44,6 @@
 		061AF649296B7373004DA90D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF648296B7373004DA90D /* ListView.swift */; };
 		061AF64B296B8C0A004DA90D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64A296B8C0A004DA90D /* LoadingView.swift */; };
 		061AF64D296B8FE4004DA90D /* UIMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64C296B8FE4004DA90D /* UIMetrics.swift */; };
-		061AF650296B9954004DA90D /* IPadDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */; };
-		061AF652296B9968004DA90D /* CustomSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF651296B9968004DA90D /* CustomSplitViewController.swift */; };
 		061AF656296B9EEE004DA90D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF655296B9EEE004DA90D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,13 +83,6 @@
 		061AF5EF2967BAF1004DA90D /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		061AF5F12967BAFA004DA90D /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		061AF5F32967BB00004DA90D /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		061AF5F62967BD0A004DA90D /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
-		061AF5F82967BD19004DA90D /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
-		061AF5FA2967BD2A004DA90D /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
-		061AF5FC2967BD88004DA90D /* ThreadManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadManagement.swift; sourceTree = "<group>"; };
-		061AF5FE2967C10A004DA90D /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
-		061AF6002967C244004DA90D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		061AF6032967C353004DA90D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		061AF60D2967CE0E004DA90D /* Operations */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Operations; path = ../Operations; sourceTree = "<group>"; };
 		061AF6132967D5DB004DA90D /* FetchRepositoriesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoriesOperation.swift; sourceTree = "<group>"; };
 		061AF6152967D611004DA90D /* AppOperationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOperationCategory.swift; sourceTree = "<group>"; };
@@ -122,8 +106,6 @@
 		061AF648296B7373004DA90D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		061AF64A296B8C0A004DA90D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		061AF64C296B8FE4004DA90D /* UIMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMetrics.swift; sourceTree = "<group>"; };
-		061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadDefaultViewController.swift; sourceTree = "<group>"; };
-		061AF651296B9968004DA90D /* CustomSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitViewController.swift; sourceTree = "<group>"; };
 		061AF655296B9EEE004DA90D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,8 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				061AF654296B9ED1004DA90D /* Detail */,
-				061AF5F52967BCF6004DA90D /* Interface */,
-				061AF64E296B993D004DA90D /* iPad */,
 				061AF62829690CFE004DA90D /* Login */,
 				061AF5EA29672BBF004DA90D /* List */,
 			);
@@ -249,28 +229,6 @@
 				061AF645296B6753004DA90D /* Entity */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		061AF5F52967BCF6004DA90D /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				061AF6022967C31B004DA90D /* VIPER */,
-				061AF5FC2967BD88004DA90D /* ThreadManagement.swift */,
-				061AF6002967C244004DA90D /* BaseViewController.swift */,
-				061AF6032967C353004DA90D /* BaseView.swift */,
-			);
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		061AF6022967C31B004DA90D /* VIPER */ = {
-			isa = PBXGroup;
-			children = (
-				061AF5FA2967BD2A004DA90D /* RouterInterface.swift */,
-				061AF5F62967BD0A004DA90D /* ViewInterface.swift */,
-				061AF5F82967BD19004DA90D /* PresenterInterface.swift */,
-				061AF5FE2967C10A004DA90D /* InteractorInterface.swift */,
-			);
-			path = VIPER;
 			sourceTree = "<group>";
 		};
 		061AF60E2967CEFC004DA90D /* Frameworks */ = {
@@ -399,15 +357,6 @@
 				061AF63D296B574A004DA90D /* RepositoryEntity.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		061AF64E296B993D004DA90D /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */,
-				061AF651296B9968004DA90D /* CustomSplitViewController.swift */,
-			);
-			path = iPad;
 			sourceTree = "<group>";
 		};
 		061AF653296B9A64004DA90D /* Resources */ = {
@@ -562,11 +511,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				061AF5EE2967BAEA004DA90D /* ListInterface.swift in Sources */,
-				061AF5FB2967BD2A004DA90D /* RouterInterface.swift in Sources */,
 				061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */,
 				061AF5E42966446C004DA90D /* CompositeAppDelegate.swift in Sources */,
-				061AF6042967C353004DA90D /* BaseView.swift in Sources */,
-				061AF652296B9968004DA90D /* CustomSplitViewController.swift in Sources */,
 				061AF64B296B8C0A004DA90D /* LoadingView.swift in Sources */,
 				061AF656296B9EEE004DA90D /* DetailViewController.swift in Sources */,
 				061AF62D29692051004DA90D /* FetchAccessTokenOperation.swift in Sources */,
@@ -578,29 +524,23 @@
 				061AF6362969EFA3004DA90D /* ServerURL.swift in Sources */,
 				061AF63E296B574A004DA90D /* RepositoryEntity.swift in Sources */,
 				061AF63C296B399F004DA90D /* HTTPMethod.swift in Sources */,
-				061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */,
 				061AF6192968EDA9004DA90D /* CodableProxy.swift in Sources */,
 				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
 				061AF62A29690D10004DA90D /* LoginViewController.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
-				061AF650296B9954004DA90D /* IPadDefaultViewController.swift in Sources */,
 				061AF62729690B53004DA90D /* WebViewController.swift in Sources */,
-				061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */,
 				061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */,
 				061AF64D296B8FE4004DA90D /* UIMetrics.swift in Sources */,
 				061AF647296B7358004DA90D /* RepositoryTableViewCell.swift in Sources */,
 				061AF640296B5CA0004DA90D /* Logger+Extensions.swift in Sources */,
 				061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */,
 				061AF632296927AA004DA90D /* LoginScope.swift in Sources */,
-				061AF6012967C244004DA90D /* BaseViewController.swift in Sources */,
 				061AF63A296B3871004DA90D /* URLRequestBuilder.swift in Sources */,
 				061AF6162967D611004DA90D /* AppOperationCategory.swift in Sources */,
 				061AF6342969EDB6004DA90D /* KeychainManager.swift in Sources */,
 				061AF63029692416004DA90D /* LoginAuthenticationCredentials.swift in Sources */,
 				061AF61D2968EF60004DA90D /* RepositoryDecodableModel.swift in Sources */,
-				061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */,
-				061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

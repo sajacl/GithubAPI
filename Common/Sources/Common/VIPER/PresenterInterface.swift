@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol PresenterInterface: AnyObject, ThreadManagement {
+public protocol PresenterInterface: AnyObject, ThreadManagement {
     
 }

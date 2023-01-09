@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-final class IPadDefaultViewController: BaseViewController {
-    override func configViewController() {
+final public class IPadDefaultViewController: BaseViewController {
+    public override func configViewController() {
         view.backgroundColor = .lightGray
     }
 }

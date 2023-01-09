@@ -7,6 +7,7 @@
 
 import Foundation
 import Operations
+import Common
 
 protocol ListRouterInterface: RouterInterface {
     func navigateToDetail(with repository: RepositoryEntity) 
