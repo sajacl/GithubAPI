@@ -50,6 +50,9 @@ final class RepositoryTableViewCell: UITableViewCell {
     private func configCell() {
         selectionStyle = .none
         contentView.backgroundColor = UIColor.background
+
+        isAccessibilityElement = false
+        startImageView.isAccessibilityElement = false
     }
 
     private func addViews() {
@@ -93,6 +96,9 @@ final class RepositoryTableViewCell: UITableViewCell {
         }
 
         repositoryStarCountLabel.text = String(starCount)
+
+        repositoryNameLabel.accessibilityLabel = "Repository name \(model.name)"
+        repositoryStarCountLabel.accessibilityLabel = "\(starCount) stars"
     }
 
     override func prepareForReuse() {
