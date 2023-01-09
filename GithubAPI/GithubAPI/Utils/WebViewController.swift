@@ -27,16 +27,10 @@ final class WebViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private lazy var webView: WKWebView = {
-        let webView = WKWebView()
-        webView.isHidden = true
-        webView.translatesAutoresizingMaskIntoConstraints = false
-        return webView
-    }()
+    private lazy var webView = WKWebView()
+        .prepareForAutoLayout()
 
     override func configViewController() {
-        super.configViewController()
-
         setupWebview(url: url)
 
         self.navigationController?.navigationBar.titleTextAttributes = [
@@ -60,8 +54,14 @@ final class WebViewController: BaseViewController {
     // MARK: - Private methods
 
     private func setupWebview(url: URL) {
-        let request = URLRequest(url: url)
         webView.navigationDelegate = self
+
+        let request = URLRequest(url: url)
+
+        // There is an known issue with WKWebView about hanging warning,
+        // You can follow the discussion from bugzilla or hacking with swift.
+        // https://www.hackingwithswift.com/forums/swiftui/xcode-14-warning-this-method-should-not-be-called-on-the-main-thread-as-it-may-lead-to-ui-unresponsiveness/17431
+        // I'm putting this here so in future you can't blame it on me :D
         webView.load(request)
     }
 

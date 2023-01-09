@@ -6,19 +6,25 @@
 //
 
 import Foundation
+import Operations
 
 protocol ListRouterInterface: RouterInterface {
-
-}
-
-protocol ListPresenterInterface: PresenterInterface {
-
-}
-
-protocol ListInteractorInterface: InteractorInterface {
-    func fetchList(searched string: String)
+    func navigateToDetail(with repository: RepositoryEntity) 
 }
 
 protocol ListViewInterface: ViewInterface {
-    
+    func repositoriesReceived(_ repositories: [RepositoryEntity])
+    func fetchRepositoriesFailed(with error: String)
+}
+
+protocol ListPresenterInterface: PresenterInterface {
+    func fetchRepositories(for owner: String)
+    func repositorySelected(_ repository: RepositoryEntity)
+}
+
+protocol ListInteractorInterface: InteractorInterface {
+    func fetchList(
+        for owner: String,
+        _ completion: @escaping ResultOperation<[RepositoryDecodableModel], Error>.CompletionHandler
+    )
 }

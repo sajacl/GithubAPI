@@ -24,13 +24,7 @@ public struct ReachabilityCondition: OperationCondition {
     }
 
     public func evaluate(for operation: Operation, completion: @escaping (Bool) -> Void) {
-        ReachabilityController.requestReachability(host) { reachable in
-            if reachable {
-                completion(true)
-            } else {
-                completion(false)
-            }
-        }
+        ReachabilityController.requestReachability(host, completionHandler: completion)
     }
 }
 
@@ -39,7 +33,7 @@ public struct ReachabilityCondition: OperationCondition {
 private class ReachabilityController {
     static var reachabilityRefs = [String: SCNetworkReachability]()
 
-    static let reachabilityQueue = DispatchQueue(label: "Operations.Reachability", attributes: [])
+    static let reachabilityQueue = DispatchQueue(label: "Operations.Reachability")
 
     static func requestReachability(_ url: URL, completionHandler: @escaping (Bool) -> Void) {
         if let host = url.host {

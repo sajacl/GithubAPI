@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import Operations
+import Common
 
 class ViewConfigurationAppDelegate: AppDelegateType {
     var window: UIWindow?
@@ -70,7 +70,7 @@ class ViewConfigurationAppDelegate: AppDelegateType {
             return splitViewController
         }
 
-        return UINavigationController(
+        return CustomNavigationController(
             rootViewController: loginViewController
         )
     }
@@ -89,7 +89,7 @@ class ViewConfigurationAppDelegate: AppDelegateType {
     }
 
     private func createListViewController() -> UIViewController {
-        return UINavigationController(
+        return CustomNavigationController(
             rootViewController: ListRouter().viewController
         )
     }

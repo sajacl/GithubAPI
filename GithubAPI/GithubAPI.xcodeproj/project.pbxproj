@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5B12966426C004DA90D /* AppDelegate.swift */; };
-		061AF5B62966426C004DA90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5B52966426C004DA90D /* ViewController.swift */; };
 		061AF5BB2966426E004DA90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AF5BA2966426E004DA90D /* Assets.xcassets */; };
 		061AF5BE2966426E004DA90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061AF5BC2966426E004DA90D /* LaunchScreen.storyboard */; };
 		061AF5C92966426E004DA90D /* GithubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF5C82966426E004DA90D /* GithubAPITests.swift */; };
@@ -37,6 +36,24 @@
 		061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */; };
 		061AF62529690477004DA90D /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 061AF62429690477004DA90D /* Common */; };
 		061AF62729690B53004DA90D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF62629690B53004DA90D /* WebViewController.swift */; };
+		061AF62A29690D10004DA90D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF62929690D10004DA90D /* LoginViewController.swift */; };
+		061AF62D29692051004DA90D /* FetchAccessTokenOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF62C29692051004DA90D /* FetchAccessTokenOperation.swift */; };
+		061AF63029692416004DA90D /* LoginAuthenticationCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF62F29692416004DA90D /* LoginAuthenticationCredentials.swift */; };
+		061AF632296927AA004DA90D /* LoginScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF631296927AA004DA90D /* LoginScope.swift */; };
+		061AF6342969EDB6004DA90D /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6332969EDB6004DA90D /* KeychainManager.swift */; };
+		061AF6362969EFA3004DA90D /* ServerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6352969EFA3004DA90D /* ServerURL.swift */; };
+		061AF6382969F09A004DA90D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF6372969F09A004DA90D /* LoginViewModel.swift */; };
+		061AF63A296B3871004DA90D /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF639296B3871004DA90D /* URLRequestBuilder.swift */; };
+		061AF63C296B399F004DA90D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF63B296B399F004DA90D /* HTTPMethod.swift */; };
+		061AF63E296B574A004DA90D /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF63D296B574A004DA90D /* RepositoryEntity.swift */; };
+		061AF640296B5CA0004DA90D /* Logger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF63F296B5CA0004DA90D /* Logger+Extensions.swift */; };
+		061AF647296B7358004DA90D /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF646296B7358004DA90D /* RepositoryTableViewCell.swift */; };
+		061AF649296B7373004DA90D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF648296B7373004DA90D /* ListView.swift */; };
+		061AF64B296B8C0A004DA90D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64A296B8C0A004DA90D /* LoadingView.swift */; };
+		061AF64D296B8FE4004DA90D /* UIMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64C296B8FE4004DA90D /* UIMetrics.swift */; };
+		061AF650296B9954004DA90D /* IPadDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */; };
+		061AF652296B9968004DA90D /* CustomSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF651296B9968004DA90D /* CustomSplitViewController.swift */; };
+		061AF656296B9EEE004DA90D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF655296B9EEE004DA90D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +76,6 @@
 /* Begin PBXFileReference section */
 		061AF5AE2966426C004DA90D /* GithubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061AF5B12966426C004DA90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		061AF5B52966426C004DA90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		061AF5BA2966426E004DA90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061AF5BD2966426E004DA90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		061AF5BF2966426E004DA90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +107,24 @@
 		061AF6212968F2BE004DA90D /* AccessTokenDecodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenDecodableModel.swift; sourceTree = "<group>"; };
 		061AF62329690412004DA90D /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Common; path = ../Common; sourceTree = "<group>"; };
 		061AF62629690B53004DA90D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		061AF62929690D10004DA90D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		061AF62C29692051004DA90D /* FetchAccessTokenOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAccessTokenOperation.swift; sourceTree = "<group>"; };
+		061AF62F29692416004DA90D /* LoginAuthenticationCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationCredentials.swift; sourceTree = "<group>"; };
+		061AF631296927AA004DA90D /* LoginScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScope.swift; sourceTree = "<group>"; };
+		061AF6332969EDB6004DA90D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		061AF6352969EFA3004DA90D /* ServerURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerURL.swift; sourceTree = "<group>"; };
+		061AF6372969F09A004DA90D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		061AF639296B3871004DA90D /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		061AF63B296B399F004DA90D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		061AF63D296B574A004DA90D /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		061AF63F296B5CA0004DA90D /* Logger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extensions.swift"; sourceTree = "<group>"; };
+		061AF646296B7358004DA90D /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		061AF648296B7373004DA90D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		061AF64A296B8C0A004DA90D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		061AF64C296B8FE4004DA90D /* UIMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMetrics.swift; sourceTree = "<group>"; };
+		061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadDefaultViewController.swift; sourceTree = "<group>"; };
+		061AF651296B9968004DA90D /* CustomSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitViewController.swift; sourceTree = "<group>"; };
+		061AF655296B9EEE004DA90D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +184,7 @@
 				061AF5E5296644BB004DA90D /* AppBootstrap */,
 				061AF5E929672BB1004DA90D /* Module */,
 				061AF6112967D5B1004DA90D /* Utils */,
-				061AF5B52966426C004DA90D /* ViewController.swift */,
-				061AF5BA2966426E004DA90D /* Assets.xcassets */,
-				061AF5BC2966426E004DA90D /* LaunchScreen.storyboard */,
+				061AF653296B9A64004DA90D /* Resources */,
 				061AF5BF2966426E004DA90D /* Info.plist */,
 			);
 			path = GithubAPI;
@@ -197,7 +229,10 @@
 		061AF5E929672BB1004DA90D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				061AF654296B9ED1004DA90D /* Detail */,
 				061AF5F52967BCF6004DA90D /* Interface */,
+				061AF64E296B993D004DA90D /* iPad */,
+				061AF62829690CFE004DA90D /* Login */,
 				061AF5EA29672BBF004DA90D /* List */,
 			);
 			path = Module;
@@ -207,10 +242,11 @@
 			isa = PBXGroup;
 			children = (
 				061AF5ED2967BAEA004DA90D /* ListInterface.swift */,
-				061AF5EB2967BADE004DA90D /* ListViewController.swift */,
-				061AF5EF2967BAF1004DA90D /* ListPresenter.swift */,
-				061AF5F12967BAFA004DA90D /* ListInteractor.swift */,
-				061AF5F32967BB00004DA90D /* ListRouter.swift */,
+				061AF641296B6728004DA90D /* View */,
+				061AF642296B6736004DA90D /* Presenter */,
+				061AF644296B674C004DA90D /* Router */,
+				061AF643296B673E004DA90D /* Interactor */,
+				061AF645296B6753004DA90D /* Entity */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -251,6 +287,12 @@
 				061AF6172968ED9A004DA90D /* Operations */,
 				061AF6182968EDA9004DA90D /* CodableProxy.swift */,
 				061AF62629690B53004DA90D /* WebViewController.swift */,
+				061AF6332969EDB6004DA90D /* KeychainManager.swift */,
+				061AF6352969EFA3004DA90D /* ServerURL.swift */,
+				061AF639296B3871004DA90D /* URLRequestBuilder.swift */,
+				061AF63B296B399F004DA90D /* HTTPMethod.swift */,
+				061AF63F296B5CA0004DA90D /* Logger+Extensions.swift */,
+				061AF64C296B8FE4004DA90D /* UIMetrics.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -266,6 +308,7 @@
 		061AF6172968ED9A004DA90D /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				061AF62B29692049004DA90D /* Login */,
 				061AF6122967D5BA004DA90D /* List */,
 			);
 			path = Operations;
@@ -274,7 +317,7 @@
 		061AF61A2968EF4B004DA90D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				061AF6202968F169004DA90D /* Encodable */,
+				061AF62E29692400004DA90D /* IPC */,
 				061AF61B2968EF51004DA90D /* Decodable */,
 			);
 			path = Model;
@@ -289,11 +332,99 @@
 			path = Decodable;
 			sourceTree = "<group>";
 		};
-		061AF6202968F169004DA90D /* Encodable */ = {
+		061AF62829690CFE004DA90D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				061AF62929690D10004DA90D /* LoginViewController.swift */,
+				061AF6372969F09A004DA90D /* LoginViewModel.swift */,
 			);
-			path = Encodable;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		061AF62B29692049004DA90D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				061AF62C29692051004DA90D /* FetchAccessTokenOperation.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		061AF62E29692400004DA90D /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				061AF62F29692416004DA90D /* LoginAuthenticationCredentials.swift */,
+				061AF631296927AA004DA90D /* LoginScope.swift */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
+		061AF641296B6728004DA90D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5EB2967BADE004DA90D /* ListViewController.swift */,
+				061AF648296B7373004DA90D /* ListView.swift */,
+				061AF646296B7358004DA90D /* RepositoryTableViewCell.swift */,
+				061AF64A296B8C0A004DA90D /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		061AF642296B6736004DA90D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5EF2967BAF1004DA90D /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		061AF643296B673E004DA90D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5F12967BAFA004DA90D /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		061AF644296B674C004DA90D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5F32967BB00004DA90D /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		061AF645296B6753004DA90D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				061AF63D296B574A004DA90D /* RepositoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		061AF64E296B993D004DA90D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				061AF64F296B9954004DA90D /* IPadDefaultViewController.swift */,
+				061AF651296B9968004DA90D /* CustomSplitViewController.swift */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		061AF653296B9A64004DA90D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				061AF5BA2966426E004DA90D /* Assets.xcassets */,
+				061AF5BC2966426E004DA90D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		061AF654296B9ED1004DA90D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				061AF655296B9EEE004DA90D /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,21 +566,38 @@
 				061AF6222968F2BE004DA90D /* AccessTokenDecodableModel.swift in Sources */,
 				061AF5E42966446C004DA90D /* CompositeAppDelegate.swift in Sources */,
 				061AF6042967C353004DA90D /* BaseView.swift in Sources */,
+				061AF652296B9968004DA90D /* CustomSplitViewController.swift in Sources */,
+				061AF64B296B8C0A004DA90D /* LoadingView.swift in Sources */,
+				061AF656296B9EEE004DA90D /* DetailViewController.swift in Sources */,
+				061AF62D29692051004DA90D /* FetchAccessTokenOperation.swift in Sources */,
 				061AF6142967D5DB004DA90D /* FetchRepositoriesOperation.swift in Sources */,
 				061AF5F02967BAF1004DA90D /* ListPresenter.swift in Sources */,
+				061AF649296B7373004DA90D /* ListView.swift in Sources */,
+				061AF6382969F09A004DA90D /* LoginViewModel.swift in Sources */,
 				061AF5F22967BAFA004DA90D /* ListInteractor.swift in Sources */,
-				061AF5B62966426C004DA90D /* ViewController.swift in Sources */,
+				061AF6362969EFA3004DA90D /* ServerURL.swift in Sources */,
+				061AF63E296B574A004DA90D /* RepositoryEntity.swift in Sources */,
+				061AF63C296B399F004DA90D /* HTTPMethod.swift in Sources */,
 				061AF5FF2967C10A004DA90D /* InteractorInterface.swift in Sources */,
 				061AF6192968EDA9004DA90D /* CodableProxy.swift in Sources */,
 				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
+				061AF62A29690D10004DA90D /* LoginViewController.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
+				061AF650296B9954004DA90D /* IPadDefaultViewController.swift in Sources */,
 				061AF62729690B53004DA90D /* WebViewController.swift in Sources */,
 				061AF5F92967BD19004DA90D /* PresenterInterface.swift in Sources */,
 				061AF5F42967BB00004DA90D /* ListRouter.swift in Sources */,
+				061AF64D296B8FE4004DA90D /* UIMetrics.swift in Sources */,
+				061AF647296B7358004DA90D /* RepositoryTableViewCell.swift in Sources */,
+				061AF640296B5CA0004DA90D /* Logger+Extensions.swift in Sources */,
 				061AF5E22966442F004DA90D /* AppDelegateFactory.swift in Sources */,
+				061AF632296927AA004DA90D /* LoginScope.swift in Sources */,
 				061AF6012967C244004DA90D /* BaseViewController.swift in Sources */,
+				061AF63A296B3871004DA90D /* URLRequestBuilder.swift in Sources */,
 				061AF6162967D611004DA90D /* AppOperationCategory.swift in Sources */,
+				061AF6342969EDB6004DA90D /* KeychainManager.swift in Sources */,
+				061AF63029692416004DA90D /* LoginAuthenticationCredentials.swift in Sources */,
 				061AF61D2968EF60004DA90D /* RepositoryDecodableModel.swift in Sources */,
 				061AF5FD2967BD88004DA90D /* ThreadManagement.swift in Sources */,
 				061AF5F72967BD0A004DA90D /* ViewInterface.swift in Sources */,
