@@ -46,6 +46,7 @@
 		061AF64D296B8FE4004DA90D /* UIMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF64C296B8FE4004DA90D /* UIMetrics.swift */; };
 		061AF656296B9EEE004DA90D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF655296B9EEE004DA90D /* DetailViewController.swift */; };
 		061AF658296BA8C1004DA90D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AF657296BA8C1004DA90D /* Colors.xcassets */; };
+		061AF65C296BAE9A004DA90D /* RepositoryCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AF65B296BAE9A004DA90D /* RepositoryCounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		061AF64C296B8FE4004DA90D /* UIMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMetrics.swift; sourceTree = "<group>"; };
 		061AF655296B9EEE004DA90D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		061AF657296BA8C1004DA90D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		061AF65B296BAE9A004DA90D /* RepositoryCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				061AF655296B9EEE004DA90D /* DetailViewController.swift */,
+				061AF65B296BAE9A004DA90D /* RepositoryCounterView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				061AF6192968EDA9004DA90D /* CodableProxy.swift in Sources */,
 				061AF5EC2967BADE004DA90D /* ListViewController.swift in Sources */,
 				061AF62A29690D10004DA90D /* LoginViewController.swift in Sources */,
+				061AF65C296BAE9A004DA90D /* RepositoryCounterView.swift in Sources */,
 				061AF5B22966426C004DA90D /* AppDelegate.swift in Sources */,
 				061AF5E829664698004DA90D /* ViewConfigurationAppDelegate.swift in Sources */,
 				061AF62729690B53004DA90D /* WebViewController.swift in Sources */,

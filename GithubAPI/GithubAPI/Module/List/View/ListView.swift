@@ -45,7 +45,6 @@ final class ListView: BaseView {
 
     private lazy var failureView: UILabel = {
         let parent = UILabel()
-        parent.text = ""
         parent.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
         parent.isHidden = true
         parent.prepareForAutoLayout()
