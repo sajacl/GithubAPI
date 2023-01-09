@@ -25,9 +25,9 @@ Resources
 | Module | Structure |
 | ------ | ------ |
 | AppDelegate | AppDelegateCompsotie + AppDelegateFactory |
-| Login | UIKit + Viper |
-| List | UIKit + MVVM and Combine |
-| Detail | UIKit |
+| Login | UIKit + MVVM |
+| List | UIKit + Viper |
+| Detail | UIKit + MVC |
 
 ## Features
 
