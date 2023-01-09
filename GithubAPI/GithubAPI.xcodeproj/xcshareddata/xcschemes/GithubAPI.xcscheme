@@ -79,6 +79,11 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+            key = "client_callback"
+            value = "https://github.com/sajacl"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "client_id"
             value = "ffa56411cce5524638a0"
             isEnabled = "YES">
