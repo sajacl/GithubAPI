@@ -22,12 +22,7 @@ final class ListViewController: BaseViewController, ListViewInterface {
     override func configViewController() {
         view.backgroundColor = UIColor.background
 
-        title = NSLocalizedString(
-            "LIST_TITLE",
-            tableName: "List",
-            value: "Repository list",
-            comment: ""
-        )
+        title = _title
 
         listView.refreshControllerAction = { [weak self] in
             self?.requestRepositories()
@@ -65,6 +60,15 @@ final class ListViewController: BaseViewController, ListViewInterface {
     func fetchRepositoriesFailed(with error: String) {
         listView.stopRefreshingIfNeeded()
         listView.showFailure(with: error)
+    }
+
+    private var _title: String {
+        NSLocalizedString(
+            "LIST_TITLE",
+            tableName: "List",
+            value: "Repository list",
+            comment: ""
+        )
     }
 }
 
