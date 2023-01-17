@@ -34,18 +34,24 @@ final class LoginViewController: BaseViewController {
     override func configViewController() {
         view.backgroundColor = UIColor.background
 
-        title = NSLocalizedString(
-            "LOGIN_TITLE",
-            tableName: "Login",
-            value: "Login via Github",
-            comment: ""
-        )
+        title = _title
 
-        viewModel.errorCallback = { error in
-            
+        viewModel.errorCallback = { [weak self] error in
+            guard let self = self else {
+                // no op
+                return
+            }
+
+            let alert = self.makeErrorAlertViewController(with: error)
+            self.present(alert, animated: true)
         }
 
-        viewModel.successCallback = {
+        viewModel.successCallback = { [weak self] in
+            guard let self = self else {
+                // no op
+                return
+            }
+
             if UIDevice.current.userInterfaceIdiom == .pad {
                 self.dismiss(animated: true)
             } else {
@@ -72,6 +78,32 @@ final class LoginViewController: BaseViewController {
             .trailingAnchor(equalTo: view.trailingAnchor)
             .bottomAnchor(equalTo: view.bottomAnchor)
     }
+
+    private func makeErrorAlertViewController(with message: String) -> UIViewController {
+        return UIAlertController(
+            title: errorTitle,
+            message: message,
+            preferredStyle: .alert
+        )
+    }
+
+    private var _title: String {
+        NSLocalizedString(
+            "LOGIN_TITLE",
+            tableName: "Login",
+            value: "Login via Github",
+            comment: ""
+        )
+    }
+
+    private lazy var errorTitle: String = {
+        NSLocalizedString(
+            "ERROR_TITLE",
+            tableName: "Login",
+            value: "Try again",
+            comment: ""
+        )
+    }()
 }
 
 extension LoginViewController: WebViewControllerDelegate {
