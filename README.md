@@ -52,8 +52,15 @@ Resources
 5. App supports light theme/dark theme.
 6. You can stream app logs and download them after directly from the device.
 7. I took it seriously, so code is really easy to read and to write tests for.
-8. iPad and iPhone is supported.
-9. BEST UI DESIGN in the world \\:D/
+8. Project has a simple Github action for every pull request (It checks if the repo builds and tests are passing successfuly).
+9. iPad and iPhone is supported.
+10. BEST UI DESIGN in the world \\:D/
+
+TODO:
+1. Improve UI.
+2. Create UML diagram.
+3. Add hands-off functionality.
+4. Expand app functionalities.
 
 ## License
 
