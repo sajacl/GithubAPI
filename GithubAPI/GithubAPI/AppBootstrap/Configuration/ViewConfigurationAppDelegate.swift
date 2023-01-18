@@ -13,10 +13,11 @@ class ViewConfigurationAppDelegate: AppDelegateType {
     var window: UIWindow?
 
     /// Credentials for Github login sequence.
+    /// To prevent them from hardcoding, they have been added to environment.
     private lazy var credentials = LoginCredentials(
-        clientId: "ffa56411cce5524638a0",
-        clientSecret: "c58f4846626e39c39b4628df90bc57d1f5d46553",
-        redirectURL: "https://github.com/sajacl"
+        clientId: ProcessInfo.processInfo.environment["client_id"]!,
+        clientSecret: ProcessInfo.processInfo.environment["client_secret"]!,
+        redirectURL: ProcessInfo.processInfo.environment["client_callback"]!
     )
 
     /// Flag to determine user is logged in and we have access to their token.
