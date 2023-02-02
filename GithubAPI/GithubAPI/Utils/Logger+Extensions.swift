@@ -12,10 +12,10 @@ extension Logger {
     private static var subsystem = Bundle.main.bundleIdentifier!
     
     /// Logs events related to login sequence.
-    static let login = Logger(subsystem: subsystem, category: "RepositoryList")
+    static let login = Logger(subsystem: subsystem, category: "Login")
 
     /// Logs events related to list.
-    static let list = Logger(subsystem: subsystem, category: "RepositoryList")
+    static let list = Logger(subsystem: subsystem, category: "List")
 
     func error<T: Error>(
         error: T,
